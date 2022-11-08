@@ -15,7 +15,8 @@ import AddEdit from "./pages/DoctorDetails/AddEdit";
 import View from "./pages/DoctorDetails/View";
 import About from "./pages/DoctorDetails/About";
 import "react-toastify/dist/ReactToastify.css";
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
   return (
