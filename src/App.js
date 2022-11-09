@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Sidebar />
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/patient" element={<Patient />} />
         <Route
           path="/dashboard/operationdetails"
