@@ -69,16 +69,16 @@ export const SidebarData = [
         path: "/doctor/AddEdit",
         icon: <BsIcons.BsPeople />,
       },
-      {
-        title: "View",
-        path: "/doctor/View",
-        icon: <BsIcons.BsPeople />,
-      },
-      {
-        title: "About",
-        path: "/doctor/About",
-        icon: <BsIcons.BsPeople />,
-      },
+      // {
+      //   title: "View",
+      //   path: "/doctor/View",
+      //   icon: <BsIcons.BsPeople />,
+      // },
+      // {
+      //   title: "About",
+      //   path: "/doctor/About",
+      //   icon: <BsIcons.BsPeople />,
+      // },
     ],
   },
   {

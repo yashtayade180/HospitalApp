@@ -63,3 +63,13 @@
     float: none;
   }
 }
+.add_btn {
+  text-align: right;
+}
+.container {
+  padding: 30;
+  overflow: auto;
+}
+.head {
+  text-align: center;
+}
