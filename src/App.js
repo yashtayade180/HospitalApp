@@ -21,7 +21,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 function App() {
   return (
     <Router>
-      <Sidebar />
+      <Sidebar classname="Sidebar" />
       <Routes>
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/patient" element={<Patient />} />
@@ -34,10 +34,10 @@ function App() {
         <Route path="/management/bloodbag" element={<BloodBag />} />
         <Route path="/management/medicines" element={<Medicines />} />
         <Route path="/doctor" element={<Doctor />} />
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/doctor/AddEdit" element={<AddEdit />} />
-        <Route path="/doctor/View/:id" element={<View />} />
-        <Route path="/doctor/About" element={<About />} />
+        {/* <Route path="/doctor/View/:id" element={<View />} />
+        <Route path="/doctor/About" element={<About />} /> */}
         <Route path="/nurse" element={<Nurse />} />
       </Routes>
     </Router>
