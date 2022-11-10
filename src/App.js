@@ -24,6 +24,7 @@ function App() {
       <Sidebar classname="Sidebar" />
       <Routes>
         <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard/patient" element={<Patient />} />
         <Route
           path="/dashboard/operationdetails"
