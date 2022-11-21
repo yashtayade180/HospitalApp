@@ -1,43 +1,50 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, withRouter } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState("Home");
   return (
-    <div className="header">
-      <p className="logo">Contact App</p>
+    <div className="header navbar-expand-lg bg-light">
       <div className="header-right">
-        <Link to="/">
+        <Link to="/dashboard">
           <p
             className={`$(activeTab === "Home" ? "active" : ""}`}
-            onClick={() => setActiveTab("Home")}
+            onClick={() => setActiveTab("signin")}
           >
             Home
           </p>
         </Link>
-        <Link to="/add">
+        <Link to="/signin">
           <p
             className={`$(activeTab === "AddContact" ? "active" : ""}`}
-            onClick={() => setActiveTab("AddContact")}
-          >
-            Add Contact
-          </p>
-        </Link>
-        <Link to="/add">
-          <p
-            className={`$(activeTab === "About" ? "active" : ""}`}
-            onClick={() => setActiveTab("About")}
+            onClick={() => setActiveTab("signin")}
           >
             About
           </p>
         </Link>
-        <Link to="/add">
+        <Link to="/signup">
+          <p
+            className={`$(activeTab === "About" ? "active" : ""}`}
+            onClick={() => setActiveTab("About")}
+          >
+            Signup
+          </p>
+        </Link>
+        <Link to="/signin">
           <p
             className={`$(activeTab === "AddContact" ? "active" : ""}`}
-            onClick={() => setActiveTab("AddContact")}
+            onClick={() => setActiveTab("signin")}
           >
-            Add Contact
+            Signin
+          </p>
+        </Link>
+        <Link to="/signin">
+          <p
+            className={`$(activeTab === "AddContact" ? "active" : ""}`}
+            onClick={() => setActiveTab("signin")}
+          >
+            SignOut
           </p>
         </Link>
       </div>
