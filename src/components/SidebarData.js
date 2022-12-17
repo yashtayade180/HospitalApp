@@ -32,7 +32,7 @@ export const SidebarData = [
   },
   {
     title: "Manage Hospital",
-    path: "/management",
+    // path: "/management",
     icon: <BsIcons.BsClipboardPlus />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -63,23 +63,23 @@ export const SidebarData = [
     icon: <FaIcons.FaStethoscope />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: "AddEdit",
-        path: "/doctor/AddEdit",
-        icon: <BsIcons.BsPeople />,
-      },
-      // {
-      //   title: "View",
-      //   path: "/doctor/View",
-      //   icon: <BsIcons.BsPeople />,
-      // },
-      // {
-      //   title: "About",
-      //   path: "/doctor/About",
-      //   icon: <BsIcons.BsPeople />,
-      // },
-    ],
+    // subNav: [
+    //   {
+    //     title: "AddEdit",
+    //     path: "/doctor/AddEdit",
+    //     icon: <BsIcons.BsPeople />,
+    //   },
+    //   // {
+    //   //   title: "View",
+    //   //   path: "/doctor/View",
+    //   //   icon: <BsIcons.BsPeople />,
+    //   // },
+    //   // {
+    //   //   title: "About",
+    //   //   path: "/doctor/About",
+    //   //   icon: <BsIcons.BsPeople />,
+    //   // },
+    // ],
   },
   {
     title: "Nurse",

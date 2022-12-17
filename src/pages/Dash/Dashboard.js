@@ -1,19 +1,25 @@
 import React from "react";
 import "./style.css";
 import Dbox from "./Dbox";
-import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
+import Menu from "../../components/Menu";
 
 const Dashboard = () => {
   return (
     <>
       <div>
-        <div>
-          <Header />
-          <Sidebar />
+        {/* impp */}
+        <div className="dash-menu">
+          <div className="">
+            <Sidebar />
+          </div>
+          <div>
+            <Menu />
+          </div>
         </div>
+
         <div>
-          <h1 className="title">DashBoard</h1>
+          {/* <h1 className="title">DashBoard</h1> */}
           <Dbox />
         </div>
       </div>

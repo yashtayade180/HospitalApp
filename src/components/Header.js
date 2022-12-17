@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header navbar-expand-lg bg-light">
       <div className="header-right">
-        <Link to="/dashboard">
+        <Link to="/home">
           <p
             className={`$(activeTab === "Home" ? "active" : ""}`}
             onClick={() => setActiveTab("signin")}

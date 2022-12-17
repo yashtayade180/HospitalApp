@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import "./BloodBag.css";
 
 const BloodBag = () => {
+  const [defaultValue, setDefaultValue] = useState(0);
+  const [bags, setBags] = useState(defaultValue);
+
   return (
     <div>
       <div>
@@ -43,10 +46,22 @@ const BloodBag = () => {
               <tr>
                 <th scope="row">1</th>
                 <td>A+</td>
-                <td>18</td>
+                <td>{bags}</td>
 
-                <td className="d-flex justify-content-between">
-                  <button className="btn btn-success">Edit</button>
+                <td className="d-flex ">
+                  <button
+                    className="btn btn-success"
+                    onClick={() => setBags(bags + 1) && setDefaultValue(bags)}
+                  >
+                    ADD
+                  </button>
+
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => setBags(bags - 1)}
+                  >
+                    REMOVE
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -54,7 +69,8 @@ const BloodBag = () => {
                 <td>B+</td>
                 <td>25</td>
                 <td className="d-flex justify-content-between">
-                  <button className="btn btn-success">Edit</button>
+                  <button className="btn btn-success">ADD</button>
+                  <button className="btn btn-success">REMOVE</button>
                 </td>
               </tr>
               <tr>
